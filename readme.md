@@ -24,6 +24,3 @@ Conclusions: These findings reveal that phenotypic plasticity, regulated through
 
 **HepG2 scRNA-seq analysis**
    - (As outlined above for HuH6 scRNA-seq analysis)
-
-**HepG2 DNA barcode analysis**
-   - (As outlined above for HuH6 DNA barcode analysis)
