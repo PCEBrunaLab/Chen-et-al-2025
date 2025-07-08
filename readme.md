@@ -1,4 +1,4 @@
-# An Integrated Lineage Tracing and Single-Cell Multiomics Strategy Reveals Plasticity Drives Treatment Adaptation in Hepatoblastoma
+# Integrated Lineage Tracing and Single-cell Multiomics Identifies Plasticity Drivers of Adaptation to Cisplatin Treatment in Hepatoblastoma
 
 ## Abstract
 Background and Aims: Hepatoblastoma (HB), the most common paediatric liver cancer, has one of the lowest mutational burdens among childhood malignancies. Despite its genomic stability, approximately 20% of HB patients develop chemoresistance and relapse, suggesting a prominent role for non-genetic cancer mechanisms in treatment adaptation. The role and underlying mechanisms of plasticity in HB requires investigation after treatment at a more granular temporal scale to further elucidate its role in treatment adaptation. In this study, we investigate the evolutionary principles and molecular drivers of phenotypic plasticity during the early phases of HB adaptation to cisplatin, a standard of care chemotherapy in HB treatment.<br />
