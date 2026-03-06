@@ -13,6 +13,7 @@ Together, these findings establish a mechanistic link between persistence, pheno
    - Trajectory inference using `Slingshot`
    - Transcritpion factor motif analysis of pseudotime-derived genes with `RcisTarget`
    - Integration with barcode expression data
+   - `MuTrans` landscape analysis in `Python`
 
 **HuH6 DNA barcode analysis**
    - Filtering and plotting of barcode abundance by counts in the DNA sequencing data
@@ -28,8 +29,8 @@ Together, these findings establish a mechanistic link between persistence, pheno
 **Patient snRNA-seq analysis**
    - Standard `Seurat` pre-processing, QC filtering, normalisation, scaling and dimensionality reduction
    - `Seurat` clustering
-   - Cell type inference with SingleR annotation
-   - Analysis of malignant cells using InferCNV
+   - Cell type inference with `SingleR` annotation
+   - Analysis of malignant cells using `InferCNV`
 
 **BIRC5 siRNA HB303, HepG2, HuH6 scRNA-seq analysis**
    - Standard `Seurat` pre-processing, QC filtering, normalisation, scaling and dimensionality reduction
