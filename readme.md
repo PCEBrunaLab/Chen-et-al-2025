@@ -1,15 +1,15 @@
-# Integrated Lineage Tracing and Single-cell Multiomics Identifies Plasticity Drivers of Adaptation to Cisplatin Treatment in Hepatoblastoma
+# Integrated Lineage Tracing and Single-Cell Multiomics Identifies a Plasticity-Proliferation Axis That Drives Treatment Adaptation in Hepatoblastoma
 
 ## Abstract
-Background and Aims: Hepatoblastoma (HB), the most common paediatric liver cancer, has one of the lowest mutational burdens among childhood malignancies. Despite its genomic stability, approximately 20% of HB patients develop chemoresistance and relapse, suggesting a prominent role for non-genetic cancer mechanisms in treatment adaptation. The role and underlying mechanisms of plasticity in HB requires investigation after treatment at a more granular temporal scale to further elucidate its role in treatment adaptation. In this study, we investigate the evolutionary principles and molecular drivers of phenotypic plasticity during the early phases of HB adaptation to cisplatin, a standard of care chemotherapy in HB treatment.<br />
-Approach and Results: By integrating expressed DNA barcoding with single-cell transcriptomics and epigenomics in dynamic preclinical models, we simultaneously trace the evolution of single clones and phenotypes of single cells. Before treatment, we identify phenotypic states in HB preclinical models that reflect the stages of liver development. We uncover progenitor-like states persist after treatment, but upon drug withdrawal clones stochastically resume proliferation and transition from less-to-more differentiated-like phenotypes, recapitulating the phenotypic heterogeneity observed at baseline. We found that this plasticity-mediated awakening of clones is driven by transcription factors in the MYC and E2F pathways, which regulate the expression of plasticity regulators, including BIRC5. Notably, chromatin at the BIRC5 locus becomes more accessible in post-treatment populations, suggesting an epigenetic memory that could prime cells for future cisplatin challenges. High BIRC5 expression is associated with poor prognosis in HB patients, underscoring the clinical relevance of plasticity-driven treatment adaptation.<br />
-Conclusions: These findings reveal that phenotypic plasticity, regulated through transcriptional and epigenetic mechanisms, underpins clonal survival and repopulation following chemotherapy in HB. Targeting plasticity effectors, such as BIRC5, may offer new therapeutic avenues to prevent or overcome treatment resistance and improve patient outcomes.
+Hepatoblastoma (HB) has one of the lowest mutational burdens among childhood cancers, limiting the role of genetic selection. Nevertheless ~20% of patients relapse, implicating non-genetic mechanisms, such as phenotypic plasticity, in treatment adaptation. The temporal and clonal dynamics of post-treatment plasticity in HB remain poorly defined. Here, we integrate expressed DNA barcoding approaches with single-cell multiomics in preclinical models to simultaneously trace clonal and phenotypic dynamics following cisplatin treatment.
+We observe that cisplatin selects for progenitor-like states, which persist as reservoirs for phenotypic re-diversification. Barcode lineage tracing reveals a subset of persister clones stochastically resume proliferation and transition from less- to more-differentiated phenotypes, an observation also captured in patient data. Pseudotime and landscape approaches identify a plasticity-proliferation axis underlying recovery post-treatment, driven by coordinated activation of E2F transcription factors and their downstream target BIRC5 (survivin). Downregulation and pharmacological inhibition of BIRC5 disrupt this axis, shifting phenotypic dynamics towards less-differentiated states and killing cisplatin-persister cells, supporting a role for BIRC5 in plasticity-led awakening from persistence. Consistently, elevated BIRC5 expression is associated with poor patient outcome.
+Together, these findings establish a mechanistic link between persistence, phenotypic plasticity, and stochastic clonal outgrowth in HB, and identify BIRC5 as a regulator of plasticity-driven adaptation and a therapeutically actionable vulnerability to halt treatment adaptation.
 
 ## Analysis scripts
 
 **HuH6 scRNA-seq analysis** 
    - Standard `Seurat` pre-processing, QC filtering, normalisation, scaling and dimensionality reduction
-   - Partitioning around medoids (PAM) clustering
+   - `Seurat` and partitioning around medoids (PAM) clustering
    - Trajectory inference using `Slingshot`
    - Transcritpion factor motif analysis of pseudotime-derived genes with `RcisTarget`
    - Integration with barcode expression data
@@ -24,3 +24,13 @@ Conclusions: These findings reveal that phenotypic plasticity, regulated through
 
 **HepG2 scRNA-seq analysis**
    - (As outlined above for HuH6 scRNA-seq analysis)
+
+**Patient snRNA-seq analysis**
+   - Standard `Seurat` pre-processing, QC filtering, normalisation, scaling and dimensionality reduction
+   - `Seurat` clustering
+   - Cell type inference with SingleR annotation
+   - Analysis of malignant cells using InferCNV
+
+**BIRC5 siRNA HB303, HepG2, HuH6 scRNA-seq analysis**
+   - Standard `Seurat` pre-processing, QC filtering, normalisation, scaling and dimensionality reduction
+   - `Seurat` clustering
